@@ -1,0 +1,6 @@
+com\ai\agent\service\KnowledgeBaseService.class
+com\ai\agent\controller\RagController.class
+com\ai\agent\AiKnowledgeAgentApplication.class
+com\ai\agent\controller\UIController.class
+com\ai\agent\service\EmbeddingService.class
+com\ai\agent\service\LLMService.class

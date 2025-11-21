@@ -1,0 +1,17 @@
+DevOps is a set of practices that combines software development and IT operations.
+Its goal is to shorten development cycles and deliver high-quality software continuously.
+
+Continuous Integration (CI) means developers frequently merge code into a shared repository.
+CI tools automatically build and test the application to detect issues early.
+
+Continuous Delivery (CD) extends CI by automating releases to staging or production environments.
+
+Infrastructure as Code (IaC) allows provisioning infrastructure using configuration files.
+Tools like Terraform, Cloud Deployment Manager, and Ansible are commonly used.
+
+Monitoring is critical in DevOps. Popular tools include Prometheus, Grafana, and Cloud Monitoring.
+
+Containers are widely used in DevOps for consistent deployment environments. Docker and Kubernetes are popular choices.
+my expenses for Nov is 50000.
+Key DevOps KPIs include deployment frequency, lead time for changes, MTTR, and change failure rate.
+to resolve issue B, restart the tomcat server

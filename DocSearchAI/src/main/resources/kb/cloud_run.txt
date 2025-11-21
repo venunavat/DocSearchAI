@@ -1,0 +1,11 @@
+Cloud Run is a fullly managed serverless compute platform by Google Cloud.
+It runs stateless containers without requiring servers, VMs, or Kubernetes.
+Cloud Run automatically scales up on traffic and scales down to zero when idle.
+It supports any language or framework because it runs your container as-is.
+Pricing is based on request count, CPU, memory, and execution time.
+Cloud Run services are publicly accessible by default, but you can restrict access using IAM.
+It integrates natively with Cloud Build, Artifact Registry, Cloud SQL, Secret Manager, and Cloud Logging.
+Cold starts can be reduced using minimum instances.
+You deploy by pushing a container image and running 'gcloud run deploy'.
+my expenses for Oct is 50000.
+to resolve issue A, update the lib folder

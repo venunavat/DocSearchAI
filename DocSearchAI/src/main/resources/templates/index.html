@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI-Powered RAG Knowledge Engine</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: linear-gradient(135deg, #4285F4, #6a11cb);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            color: #333;
+            width: 500px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #4285F4;
+        }
+
+        input[type="text"] {
+            width: 86%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4285F4;
+            box-shadow: 0 0 6px rgba(66,133,244,0.5);
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #4285F4, #34A853);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #3367D6, #2C8C46);
+        }
+
+        .answer-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #4285F4;
+            border-radius: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
+		
+    </style>
+</head>
+<body>
+
+<div class="container">
+	<br><br>
+    <h2>⚡DocSearchAI⚡</h2>
+	&nbsp;&nbsp;<label>AI-Powered RAG agent to get answers from Enterprise documents.</label><br><br><br><br><br><br>
+    <form action="/ask-ui" method="post">
+        <label class="label">Enter your question:</label><br><br>
+        <input type="text" name="question" placeholder="E.g. What is Cloud Run?" required>
+		<br><br><br><br><br><br>
+        <button type="submit">Submit ✨</button>
+    </form>
+
+    <div class="answer-box" th:if="${answer}">
+        <p><span class="label">Answer:</span><br>
+            <span th:text="${answer}"></span>
+        </p>
+    </div>
+	<br><br>
+</div>
+
+</body>
+</html>

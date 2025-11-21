@@ -1,0 +1,17 @@
+Cloud Run is good for building microservices and AI agents because it scales automatically.
+It works well for event-driven systems when combined with Pub/Sub or Cloud Scheduler.
+Cloud Run supports concurrency, allowing multiple requests to be handled by a single instance.
+
+For simple AI agents, you can keep the knowledge base in text files and deploy it in the container.
+Gemini API can be used for embeddings and reasoning.
+
+Best practices:
+- Keep container images small.
+- Use multi-stage Docker builds.
+- Enable Cloud Run minimum instances for low-latency APIs.
+- Use Secret Manager instead of environment variables for sensitive data.
+- Add a /health endpoint.
+- Log request info for debugging.
+
+RAG works better if documents are short, clean, and well-structured.
+Avoid dumping huge unstructured text; break content into small chunks.
